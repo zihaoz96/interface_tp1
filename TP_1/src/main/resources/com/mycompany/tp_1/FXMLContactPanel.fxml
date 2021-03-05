@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="com.mycompany.tp_1.FXMLContactPanelController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <Pane prefHeight="103.0" prefWidth="400.0">
+               <children>
+                  <Text layoutX="25.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" wrappingWidth="104.240234375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="200.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toto" wrappingWidth="104.240234375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="25.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Type" wrappingWidth="146.240234375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="contactType" layoutX="200.0" layoutY="51.0" prefHeight="23.0" prefWidth="170.0" />
+                  <Line endX="275.0" layoutX="115.0" layoutY="90.0" startX="-100.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="110.0" prefWidth="400.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <Button fx:id="indentity" mnemonicParsing="false" onAction="#tabIndentity" prefHeight="60.0" prefWidth="106.0" text="Indentity">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="phones" mnemonicParsing="false" onAction="#tabPhones" prefHeight="60.0" prefWidth="106.0" text="Phones">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="address" mnemonicParsing="false" onAction="#tabAddress" prefHeight="60.0" prefWidth="106.0" text="Address">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
